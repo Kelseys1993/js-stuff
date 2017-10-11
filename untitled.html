@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	p {
+		color: red;
+	}
+
+	</style>
+</head>
+<body>
+
+	<p id="myId">learning javascript</p>
+
+	<script>
+		//These represent heights 
+		// var thisA, thisB, thisC
+
+		//This represents Kelsey's height
+		// var kelseysHeight = 168;
+		// var kelseysAge = 24;
+
+		//here we have made a variables that targets the dom via the getElementById method
+
+		// thisA = kelseysHeight / 2;
+		// thisC = thisA - 10;
+		// thisB = 200 * 10;
+
+		var target = document.getElementById('myId')
+
+
+
+		// This is a method called console
+		//console.log(target);
+		target.style.textAlign = 'center';
+
+
+
+
+
+
+
+		var today = new Date();
+		var hourNow = today.getHours();
+		var greeting;
+
+		// console.log(' this var is today ' + today);
+		// console.log('this is var hourNow ' + hourNow);
+		// console.log(greeting);
+
+		console.log(hourNow)
+		if(hourNow > 18){
+			greeting  = 'Good Evening!!!';
+		} else{
+			greeting = 'Good Morning!!!';
+		}
+		console.log(greeting)
+
+	</script>
+</body>
+</html>
